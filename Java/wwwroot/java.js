@@ -20,13 +20,12 @@ button.addEventListener('click', () => {
     }
 });
 
-const list = document.getElementById("toggleList");
-const addlist = document.getElementById("addList");
+const addButton = document.getElementById('add-item-button'); 
+const list = document.getElementById('item-list'); 
 
-list.addEventListener("click", () => {
-    addlist.createElement();
-    for(let i = 0; i < itemk.Length; i++)
-    {
-        text += "item" + i + "<br>";
-    }
+addButton.addEventListener('click', function () {
+    const newItem = document.createElement('li');
+    const itemCount = list.children.length + 1;
+    newItem.textContent = `Item ${itemCount}`;
+    list.appendChild(newItem);
 });
