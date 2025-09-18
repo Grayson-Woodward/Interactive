@@ -1,0 +1,22 @@
+.inactive
+{
+    background-color: red;
+    color: white;
+}
+
+.active
+{
+    background-color: pink;
+    color: black;
+}
+
+.pretty-button
+{
+    background-color: aqua;
+    color:black;
+}
+
+.pretty-button:hover{
+    background-color: rgb(1, 151, 151);
+    color:black;
+}
